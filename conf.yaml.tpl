@@ -1,0 +1,16 @@
+---
+# 版本号
+version: 1.0.1
+
+# mysql配置
+mysql:
+user: root
+password: 123456
+host: 192.168.1.37
+port: 3306
+name: gin-layui-admin
+
+app:
+debug: true
+ddpush: https://oapi.dingtalk.com/robot/send?access_token=xxx # 钉钉推送
+port: 8800
