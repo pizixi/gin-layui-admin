@@ -89,8 +89,6 @@ CREATE TABLE `user`  (
 -- ----------------------------
 INSERT INTO `user` VALUES (1, 1, 'admin', 'admin', '97aae6915f853246abf22773112d2fb4', '13866668888', 'xxx@qq.com', '58QM', 1696674269, '127.0.0.1', 1, 0, 0, 0, 1548146771);
 INSERT INTO `user` VALUES (2, 2, 'admin2', 'admin2', '97aae6915f853246abf22773112d2fb4', '13855556666', 'gjs3ob_t@streetsinus.com', '58QM', 1696599396, '127.0.0.1', 1, 1, 1, 1696598348, 1696598348);
-INSERT INTO `user` VALUES (3, 2, 'admin3', 'admin3', '26a72db35baca65333d1e314ab70411f', '15395040869', 'cpktbf54906@chaco.net', 'uY7c', 1696663962, '127.0.0.1', 0, 1, 3, 1696649699, 1696664313);
 INSERT INTO `user` VALUES (4, 3, 'admin4', 'admin4', '55ba69f874cf544b2fa46f4ac9412c54', '13178687958', 'cpktbf@chaco.net', 'pHRV', 1696667404, '127.0.0.1', 0, 1, 1, 1696664346, 1696674031);
-INSERT INTO `user` VALUES (5, 1, 'admin5', 'admin5', '2fbf13521c2fce3aa5b42ef2b052cc4f', '15888888888', 'pizixi@qq.com', 'ujlR', 1696674238, '127.0.0.1', 1, 1, 1, 1696674224, 1696675277);
 
 SET FOREIGN_KEY_CHECKS = 1;
