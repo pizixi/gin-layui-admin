@@ -26,7 +26,7 @@ func Init() {
 	if dbPort == "" {
 		dbPort = "3306"
 	}
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local", cnf.User, cnf.Password, cnf.Host, dbPort, cnf.Name)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local&timeout=10s", cnf.User, cnf.Password, cnf.Host, dbPort, cnf.Name)
 	log.Println(dsn)
 
 	var err error
@@ -41,6 +41,12 @@ func Init() {
 	if err != nil {
 		log.Fatal("mysql 连接失败", err.Error())
 	}
+	sqlDB, err := db.DB()
+	if err != nil {
+		log.Fatal("获取数据库连接池失败", err.Error())
+	}
+	sqlDB.SetMaxIdleConns(10)  // 设置最大空闲连接数
+	sqlDB.SetMaxOpenConns(100) // 设置最大打开连接数
 }
 
 // MysqlGetList 分页查找范围条目总数，全部查询返回0
