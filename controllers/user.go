@@ -43,7 +43,8 @@ func UserAddIndex(c *gin.Context) {
 
 	data := gin.H{
 		"role":      list,
-		"pageTitle": "新增管理员",
+		"pageTitle": "新增用户",
+		"hideTop":   true, // 设置hideTop为true来隐藏公共头部
 	}
 	c.HTML(200, "userAdd", data)
 }
@@ -78,6 +79,7 @@ func UserEditIndex(c *gin.Context) {
 			"role":      list,
 			"admin":     row,
 			"pageTitle": "编辑用户",
+			"hideTop":   true, // 设置hideTop为true来隐藏公共头部
 		}
 		c.HTML(200, "userEdit", data)
 	}
