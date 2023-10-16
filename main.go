@@ -10,6 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// go build -ldflags "-s -w"
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	models.Init()
