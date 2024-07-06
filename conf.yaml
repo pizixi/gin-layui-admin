@@ -2,13 +2,9 @@
 # 版本号
 version: 1.0.1
 
-# mysql配置
-mysql:
-  user: root
-  password: 123456
-  host: 192.168.1.37
-  port: 3306
-  name: gin-layui-admin
+# dblink: mysql:root:123456@tcp(192.168.1.123:3306)/gin-layui-admin?charset=utf8mb4&parseTime=True&loc=Local&timeout=10s
+dblink: sqlite:gin-layui-admin.sqlite3
+
 
 app:
   debug: true

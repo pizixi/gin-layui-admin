@@ -9,8 +9,12 @@
 
 
 ## 初始化
+MySQL数据库：
 建库，库名：gin-layui-admin
-导入sql脚本：gin-layui-admin.sql
+~~导入sql脚本：gin-layui-admin.sql~~ （已自动创建表和基础数据）
+
+sqlite3数据库：
+已自动创建数据库文件、表和基础数据，无需任何初始化操作
 
 >管理员账号：admin，密码：123456
 
