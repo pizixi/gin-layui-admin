@@ -1,6 +1,6 @@
 module gin-layui-admin
 
-go 1.21.1
+go 1.20
 
 require (
 	github.com/gin-contrib/multitemplate v0.0.0-20190118042248-542ef922db4b
